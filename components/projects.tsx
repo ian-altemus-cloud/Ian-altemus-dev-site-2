@@ -272,7 +272,7 @@ export function Projects() {
                 </div>
                 <div className="mt-6 flex flex-wrap gap-3">
                   {p.live && (
-
+                    <a
                       href={p.live}
                       className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 font-mono text-xs font-medium text-primary-foreground transition-opacity hover:opacity-90"
                     >
