@@ -280,6 +280,7 @@ export function Projects() {
                     </a>
                   )}
 
+                  <a
                     href={p.github}
                     target="_blank"
                     rel="noreferrer"
