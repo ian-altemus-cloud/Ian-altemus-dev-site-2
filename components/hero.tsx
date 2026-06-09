@@ -52,7 +52,7 @@ export function Hero() {
               Let&apos;s talk <ArrowUpRight className="size-4" />
             </a>
             <a
-              href="/ian-altemus-resume.pdf"
+              href="/Ian_Altemus_Resume_v10.pdf"
               className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm text-foreground transition-colors hover:border-primary/50 hover:text-primary"
             >
               Resume <FileDown className="size-4" />
