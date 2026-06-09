@@ -27,7 +27,7 @@ export function Metrics() {
   return (
     <section className="border-b border-border/60 bg-secondary/20">
       <div className="mx-auto max-w-6xl px-6 py-20">
-        <SectionLabel index="01">Impact in production</SectionLabel>
+        <SectionLabel index="02">Impact in production</SectionLabel>
 
         <div className="mt-10 grid gap-px overflow-hidden rounded-xl border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
           {metrics.map((m) => (

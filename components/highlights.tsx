@@ -39,7 +39,7 @@ export function Highlights() {
   return (
     <section className="border-b border-border/60">
       <div className="mx-auto max-w-6xl px-6 py-20">
-        <SectionLabel index="02">Highlights</SectionLabel>
+        <SectionLabel index="04">Highlights</SectionLabel>
 
         <div className="mt-10 grid gap-px overflow-hidden rounded-xl border border-border bg-border md:grid-cols-2">
           {highlights.map((h, i) => (
