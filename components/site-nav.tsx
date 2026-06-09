@@ -34,6 +34,14 @@ export function SiteNav() {
             </a>
           ))}
           <a
+            href="/Ian_Altemus_Resume_v10.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-mono text-sm text-muted-foreground transition-colors hover:text-foreground"
+          >
+            Resume
+          </a>
+          <a
             href="#contact"
             className="rounded-md border border-primary/40 bg-primary/10 px-4 py-1.5 font-mono text-sm text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
           >
