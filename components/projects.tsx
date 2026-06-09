@@ -4,7 +4,6 @@ import { useState } from "react"
 import { ExternalLink } from "lucide-react"
 import { GithubIcon } from "@/components/brand-icons"
 import { SectionLabel } from "@/components/section-label"
-import { FlowDiagram } from "@/components/flow-diagram"
 import { AnimatedFlow } from "@/components/animated-flow"
 
 const silverlinkStack = [
