@@ -5,6 +5,7 @@ import { ExternalLink } from "lucide-react"
 import { GithubIcon } from "@/components/brand-icons"
 import { SectionLabel } from "@/components/section-label"
 import { FlowDiagram } from "@/components/flow-diagram"
+import { AnimatedFlow } from "@/components/animated-flow"
 
 const silverlinkStack = [
   "ECS Fargate",
@@ -122,7 +123,7 @@ const projects: Project[] = [
     live: "#contact",
     body: (
       <div className="space-y-5">
-        <FlowDiagram title="AWS architecture" steps={silverlinkFlow} />
+        <AnimatedFlow title="AWS architecture — live message flow" steps={silverlinkFlow} stepDuration={600} pauseDuration={2000} />
         <div className="rounded-lg border border-border bg-background/50 p-5">
           <p className="text-sm leading-relaxed text-muted-foreground">
             <strong className="font-medium text-foreground">Key decisions: </strong>
@@ -162,7 +163,7 @@ const projects: Project[] = [
     github: "https://github.com/ian-altemus-cloud",
     body: (
       <div className="space-y-5">
-        <FlowDiagram title="CI/CD pipeline" steps={trendlinkPipeline} />
+        <AnimatedFlow title="CI/CD pipeline — live deployment sequence" steps={trendlinkPipeline} stepDuration={700} pauseDuration={2000} />
         <div className="rounded-lg border border-border bg-background/50 p-5">
           <p className="text-sm leading-relaxed text-muted-foreground">
             <strong className="font-medium text-foreground">Pipeline logic: </strong>
@@ -171,7 +172,7 @@ const projects: Project[] = [
             promotion. Failed probes trigger automatic rollback with no manual intervention.
           </p>
         </div>
-        <FlowDiagram title="Infrastructure topology" steps={trendlinkTopology} />
+        <AnimatedFlow title="Infrastructure topology" steps={trendlinkTopology} stepDuration={650} pauseDuration={2000} />
         <div className="grid gap-px overflow-hidden rounded-lg border border-border bg-border md:grid-cols-3">
           {trendlinkPillars.map((p) => (
             <div key={p.label} className="bg-card p-5">
@@ -271,14 +272,14 @@ export function Projects() {
                 </div>
                 <div className="mt-6 flex flex-wrap gap-3">
                   {p.live && (
-                    <a
+
                       href={p.live}
                       className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 font-mono text-xs font-medium text-primary-foreground transition-opacity hover:opacity-90"
                     >
                       Live product <ExternalLink className="size-3.5" />
                     </a>
                   )}
-                  <a
+
                     href={p.github}
                     target="_blank"
                     rel="noreferrer"
