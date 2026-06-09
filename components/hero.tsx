@@ -71,7 +71,7 @@ export function Hero() {
                 <GithubIcon className="size-5" />
               </a>
               <a
-                href="https://www.linkedin.com"
+                href="https://linkedin.com/in/ian-altemus-cloud"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="LinkedIn"
