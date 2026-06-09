@@ -1,8 +1,9 @@
 import { SiteNav } from "@/components/site-nav"
 import { Hero } from "@/components/hero"
+import { Services } from "@/components/services"
 import { Metrics } from "@/components/metrics"
-import { Highlights } from "@/components/highlights"
 import { Projects } from "@/components/projects"
+import { Highlights } from "@/components/highlights"
 import { TechStack } from "@/components/tech-stack"
 import { About } from "@/components/about"
 import { Contact } from "@/components/contact"
@@ -13,9 +14,10 @@ export default function Page() {
       <SiteNav />
       <main>
         <Hero />
+        <Services />
         <Metrics />
-        <Highlights />
         <Projects />
+        <Highlights />
         <TechStack />
         <About />
         <Contact />
