@@ -19,7 +19,7 @@ const channels = [
   },
   {
     label: "GitHub",
-    icon: Github,
+    icon: GithubIcon,
     value: "ian-altemus-cloud",
     note: "github.com/ian-altemus-cloud",
     href: "https://github.com/ian-altemus-cloud",

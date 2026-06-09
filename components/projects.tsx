@@ -1,4 +1,5 @@
-import { ExternalLink, Github } from "lucide-react"
+import { ExternalLink } from "lucide-react"
+import { GithubIcon } from "@/components/brand-icons"
 import { SectionLabel } from "@/components/section-label"
 import { FlowDiagram } from "@/components/flow-diagram"
 
@@ -152,7 +153,7 @@ export function Projects() {
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-md border border-border px-4 py-2 font-mono text-xs text-foreground transition-colors hover:border-primary/50 hover:text-primary"
               >
-                <Github className="size-3.5" /> GitHub
+                <GithubIcon className="size-3.5" /> GitHub
               </a>
             </div>
           </div>
@@ -211,7 +212,7 @@ export function Projects() {
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-md border border-border px-4 py-2 font-mono text-xs text-foreground transition-colors hover:border-primary/50 hover:text-primary"
               >
-                <Github className="size-3.5" /> GitHub
+                <GithubIcon className="size-3.5" /> GitHub
               </a>
             </div>
           </div>
