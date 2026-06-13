@@ -1,11 +1,5 @@
-import { ArrowUpRight, Play, FileDown } from "lucide-react"
+import { ArrowUpRight, FileDown } from "lucide-react"
 import { GithubIcon, LinkedinIcon } from "@/components/brand-icons"
-
-const stats = [
-  { value: "27%", label: "DM-to-booking conversion rate on live production traffic" },
-  { value: "<60s", label: "Production AI response time" },
-  { value: "106", label: "Terraform-managed AWS resources" },
-]
 
 const tools = ["AWS", "K8s", "Terraform"]
 
@@ -18,8 +12,7 @@ export function Hero() {
         aria-hidden="true"
       />
 
-      <div className="relative mx-auto grid max-w-6xl items-center gap-10 px-6 py-16 md:py-24 lg:grid-cols-[1fr_1.05fr_auto] lg:gap-8">
-        {/* Left: intro + CTAs */}
+      <div className="relative mx-auto grid max-w-6xl items-center gap-10 px-6 py-16 md:py-24 lg:grid-cols-2 lg:gap-12">
         <div className="order-1">
           <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 font-mono text-xs text-primary">
             <span className="relative flex size-2">
@@ -43,23 +36,43 @@ export function Hero() {
             Building and operating production AI systems on AWS, Kubernetes, and Terraform with a security-first,
             least-privilege approach at every layer.
           </p>
+        </div>
 
-          <div className="mt-8 flex flex-wrap items-center gap-3">
+        <div className="order-2 flex flex-col gap-6">
+          <div
+            className="relative w-full overflow-hidden rounded-2xl border border-border bg-black shadow-2xl shadow-black/40"
+            style={{ paddingTop: "56.25%" }}
+          >
+            <video
+              src="/walkthrough.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              controls
+              preload="metadata"
+              className="absolute inset-0 h-full w-full object-contain"
+            />
+          </div>
+
+          <div className="flex flex-wrap items-center gap-3">
             <a
-              href="#contact"
+              href="mailto:ianaltemustech@gmail.com?
+              subject=Cloud%20Engineering%20Opportunity"
+
               className="inline-flex items-center gap-2 rounded-full bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-opacity hover:opacity-90"
             >
               Let&apos;s talk <ArrowUpRight className="size-4" />
             </a>
             <a
-              href="/Ian_Altemus_Resume_v10.pdf"
+              href="/Ian_Altemus_Resume.pdf"
               className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm text-foreground transition-colors hover:border-primary/50 hover:text-primary"
             >
               Resume <FileDown className="size-4" />
             </a>
           </div>
 
-          <div className="mt-8 flex items-center gap-4">
+          <div className="flex items-center gap-4">
             <div className="flex items-center gap-3">
               <a
                 href="https://github.com/ian-altemus-cloud"
@@ -92,44 +105,6 @@ export function Hero() {
               ))}
             </div>
           </div>
-        </div>
-
-        {/* Center: Loom video placeholder */}
-        <div className="order-3 lg:order-2">
-          <div className="group relative aspect-video overflow-hidden rounded-2xl border border-border bg-card shadow-2xl shadow-black/40">
-            {/* TODO: replace this placeholder with your Loom embed.
-                <iframe src="https://www.loom.com/embed/YOUR_VIDEO_ID" className="absolute inset-0 h-full w-full" allowFullScreen /> */}
-            <div className="absolute inset-0 bg-grid opacity-20" aria-hidden="true" />
-            <div
-              className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-primary/10 via-transparent to-primary/5"
-              aria-hidden="true"
-            />
-            <div className="absolute left-4 top-4 flex items-center gap-1.5">
-              <span className="size-2.5 rounded-full bg-destructive/70" />
-              <span className="size-2.5 rounded-full bg-primary/40" />
-              <span className="size-2.5 rounded-full bg-primary" />
-            </div>
-            <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
-              <span className="flex size-16 items-center justify-center rounded-full border border-primary/40 bg-primary/10 text-primary transition-transform group-hover:scale-105">
-                <Play className="ml-1 size-6 fill-current" />
-              </span>
-              <p className="font-mono text-sm text-foreground">Loom walkthrough</p>
-              <p className="font-mono text-xs text-muted-foreground">Coming soon — video embed goes here</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Right: stat column */}
-        <div className="order-2 flex gap-6 lg:order-3 lg:flex-col lg:gap-8 lg:pl-2">
-          {stats.map((s, i) => (
-            <div key={s.label} className="lg:max-w-[10rem]">
-              {i > 0 && <span className="mb-6 hidden h-px w-10 bg-border lg:block" aria-hidden="true" />}
-              <div className="font-mono text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-                {s.value}
-              </div>
-              <p className="mt-1 text-xs leading-relaxed text-muted-foreground">{s.label}</p>
-            </div>
-          ))}
         </div>
       </div>
     </section>
